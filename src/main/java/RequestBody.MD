@@ -79,7 +79,7 @@ app.post("/user", ctx ->{
         User user=om.readValue(jsonString,User.class);
 
         //change the last name
-        user.setLastname("Jones");
+        user.setL("Jones");
 
         //generate an HTTP response with the user object in the response body as a JSON.
         ctx.json(user);
